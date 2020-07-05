@@ -17,7 +17,7 @@ auth.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 # tweet取得
-get_tweet_num = 2
+get_tweet_num = 100
 ID_name = ["ecoyuri"]
 result = tweepy.Cursor(api.user_timeline,id=ID_name[0]).items(get_tweet_num)
 
